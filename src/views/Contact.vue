@@ -1,5 +1,77 @@
 <template>
-  <div class="contact">
-    <h1>This is contact page</h1>
+  <div class="wrapper">
+    <div id="_form">
+      <ContactForm />
+    </div>
+    <!--------------------------------------        Google Maps API        -------------------------->
+    <div id="map">
+      <Gmap />
+    </div>
   </div>
 </template>
+<script>
+import Gmap from '../components/Gmap'
+import ContactForm from '../components/ContactForm'
+
+export default {
+  components: { Gmap, ContactForm },
+   data () {
+     return {
+
+     }
+   }
+}
+</script>
+<style scoped>
+    /*  -----------------        Mobile Grid Display            -----------------------  */
+      .wrapper {
+        height: 100vh;
+        display: grid;
+        padding-top: 50px;
+        grid-template-columns: 140px 1fr 1fr 140px;
+        grid-template-rows: auto;
+        grid-template-areas: ". _form _map ."
+                             ". _form _map .";
+      }
+
+      /*  -----------------       _form           -----------------------  */
+
+      #_form {
+        grid-area: _form;
+        padding: 20px;
+      }
+
+      /*  -----------------        _map           -----------------------  */
+
+      #map {
+        grid-area: _map;
+        height: 500px;
+      }
+      .v-text-field {
+        font-weight: 200;
+      }
+    /*  -----------------        Media           -----------------------  */
+
+    @media only screen and (max-width: 700px){
+      
+      .wrapper {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "_form"
+                             "_map";
+      }
+
+      #_form {
+        grid-area: _form;
+        padding: 10px;
+      }
+ 
+      #map {
+        grid-area: _map;
+        padding: 13px;
+        height: 400px;
+      }
+    }
+</style>
