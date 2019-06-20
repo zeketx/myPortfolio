@@ -40,7 +40,7 @@
     <v-btn
       type="submit"
       :disabled="!valid"
-      color="success"
+      color="#1c90ee"
       @click="validate"
     >
       SEND
@@ -98,7 +98,7 @@ export default {
             // Validation 
             //////////////////////////////////////////////
             methods: {
-                    validate () {
+                    validate: function () {
                     if (this.$refs.form.validate()) {
                         this.snackbar = true
                     }
@@ -135,5 +135,8 @@ export default {
       }
       li a:hover {
         color: #4cae50;
+      }
+      .theme--light.v-btn {
+          color: #fff;
       }
 </style>
