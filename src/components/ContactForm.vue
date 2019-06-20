@@ -98,7 +98,7 @@ export default {
             // Validation 
             //////////////////////////////////////////////
             methods: {
-                    validate: function () {
+                    validate () {
                     if (this.$refs.form.validate()) {
                         this.snackbar = true
                     }
