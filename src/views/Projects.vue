@@ -149,8 +149,8 @@ export default {
 
         #_intro_btn:hover #btn_message {
            visibility:visible;
-           font-weight: 200;
-           color: grey;
+           font-weight: 300;
+           color: rgb(25, 23, 23);
          }
 
         #_resume {
@@ -168,10 +168,11 @@ export default {
             font-size: 30px;
         }
         #work_para {
-            font-weight: 200;
+            font-weight: 300;
             display: block;
             padding: 10px 40px;
         }
+        
 
        /*  -----------------         Website Sub Grid Display            -----------------------  */
       
@@ -189,7 +190,7 @@ export default {
        #project_description {
            grid-column: 2/3;
            padding-left: 9%;
-           font-weight: 200;
+           font-weight: 300;
        }
 
        #card_title {
@@ -227,7 +228,7 @@ export default {
            grid-column: 2/3;
            padding-left: 9%;
            text-align: left;
-           font-weight: 200;
+           font-weight: 300;
        }
 
        #mbl_title {
@@ -243,7 +244,7 @@ export default {
 
        #code_link {
            font-size: 12px;
-           color:grey;
+           color: #000;
            border: 1px solid grey;
            border-radius: 40px;
            padding: 5px 30px;

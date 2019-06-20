@@ -141,14 +141,15 @@ export default {
         }
 
         #_statement {
-            font-size: 13px;
-            font-weight: 200;
+            font-size: 16px;
+            font-weight: 400;
             padding: 15px;
             border-top: 1px solid rgba(189, 195, 199, 1);
             border-bottom: 1px solid rgba(189, 195, 199, 1);
         }
 
         #_about {
+            font-weight: 300;
             padding: 20px;
             margin: 18px;
             font-size: 16px;
