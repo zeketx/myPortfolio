@@ -6,7 +6,7 @@
           ref="form"
           v-model="valid"
           lazy-validation
-          action=""
+          action="/success"
           method="post"
           data-netlify-honeypot="bot-field"
           data-netlify="true"
