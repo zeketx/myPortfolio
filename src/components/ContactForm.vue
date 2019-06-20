@@ -7,7 +7,7 @@
           v-model="valid"
           lazy-validation
           action=""
-          method="post"
+          method="POST"
           data-netlify-honeypot="bot-field"
           data-netlify="true"
           name="contact-form"
@@ -18,6 +18,7 @@
       :counter="30"
       :rules="nameRules"
       label="Name"
+      type="text"
       name="name"
       required
     ></v-text-field>
@@ -26,6 +27,7 @@
       v-model="email"
       :rules="emailRules"
       label="E-mail"
+      type="email"
       name="email"
       required
     ></v-text-field>
