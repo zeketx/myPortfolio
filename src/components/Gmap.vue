@@ -125,7 +125,5 @@ export default {
 </script>
 
 <style scoped>
-#map {
-    border: 1px solid grey;
-}
+
 </style>
