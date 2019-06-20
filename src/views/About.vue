@@ -105,7 +105,7 @@ export default {
         }
 
         #_svg_deer {
-            height: 60%;
+            height: 350px;
             padding-top: 30%;
             
         }
