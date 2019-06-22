@@ -78,4 +78,22 @@ export default {
       margin: 0px!important;
     }
 }
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+  .container {
+    flex: none;
+  }  
+
+  .pa-3 {
+      padding: 0px!important;
+    }
+  .ma-2 {
+      margin: 0px!important;
+    }
+  }
 </style>

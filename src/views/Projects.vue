@@ -352,7 +352,6 @@ export default {
      .wrapper {
            display: grid;
            height: auto;
-           padding: 5px;
            width: 100vw;
            grid-template-columns: 1fr;
            grid-template-rows: 200px auto;
@@ -377,7 +376,8 @@ export default {
 
         #project_description {
            grid-column: auto;
-           padding-left: 0px;
+           padding-left:0;
+           padding: 10px;
        }
 
     /*  -----------------         MOBILE GRID / STYLE         -----------------------  */
@@ -394,6 +394,7 @@ export default {
         #mobile_description{
            grid-column: auto;
            padding-left: 0px;
+           padding: 10px;
        }
 }    
 
@@ -407,7 +408,6 @@ export default {
      .wrapper {
            height: 100vh;
            display: grid;
-           padding: 15px;
            padding-top: 50px;
            grid-template-columns: 1fr 1fr 1fr 1fr;
            grid-template-rows:auto;
@@ -422,7 +422,7 @@ export default {
         #img_ {
            grid-column: 1/5;
            display: grid;
-           grid-gap: 15px;
+           grid-gap: 10px;
            grid-template-columns: 1fr 1fr;
            padding-bottom: 80px;
        }
