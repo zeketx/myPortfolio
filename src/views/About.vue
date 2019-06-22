@@ -110,16 +110,16 @@ export default {
             
         }
 
+        /*  -----------------        Media Query  iPhone 7/8   ////Portrait////       -----------------------  */
 
-        /*  -----------------        Media Query          -----------------------  */
-
-    @media only screen and (max-width: 700px){
-
-        /*  -----------------        Media Main Grid Display          -----------------------  */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2)
+    and (orientation: Portrait) { 
 
         .wrapper {
-            height: auto;
-            display: grid;
+          display: grid;
             padding-top: 22%;
             grid-template-columns: auto;
             grid-template-rows: 60px 1fr;
@@ -127,7 +127,7 @@ export default {
                                  'intro';
         }
 
-        /*  -----------------        Intro Section          -----------------------  */
+        /*  ----------------- Intro Section  -----------------------  */
         
         #intro_section {
             grid-area: intro;
@@ -159,7 +159,7 @@ export default {
             padding-left: 35px;
         }
 
-        /*  -----------------        Deer Section          -----------------------  */
+        /*  -----------------  Deer Section -----------------------  */
 
         #deer {
             grid-area: deer;
@@ -181,12 +181,87 @@ export default {
         }  
     }
 
+        /*  -----------------        Media Query  iPhone 6+/6s+/7+/8+   ////Portrait////       -----------------------  */
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: Portrait){
+
+        /*  ----------------- Media Main Grid Display -----------------------  */
+
+        .wrapper {
+          display: grid;
+            padding-top: 22%;
+            grid-template-columns: auto;
+            grid-template-rows: 60px 1fr;
+            grid-template-areas: 'deer'
+                                 'intro';
+        }
+
+        /*  ----------------- Intro Section  -----------------------  */
+        
+        #intro_section {
+            grid-area: intro;
+            padding-top: 10%;
+        }
+
+        #_title_ {
+            text-align: center;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        #_statement {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 15px;
+            border-top: 1px solid rgba(189, 195, 199, 1);
+            border-bottom: 1px solid rgba(189, 195, 199, 1);
+        }
+
+        #_about {
+            font-weight: 300;
+            padding: 20px;
+            margin: 18px;
+            font-size: 16px;
+        }
+
+        #_code {
+            padding-left: 35px;
+        }
+
+        /*  -----------------  Deer Section -----------------------  */
+
+        #deer {
+            grid-area: deer;
+            padding-top: 0;
+            height: 100px;
+        }
+
+        #_svg_deer {
+            height: 100px;
+            padding-top: 0%;
+        }
+
+        #contact {
+            padding: 10px 30px;
+        }
+
+        #mywork {
+            padding: 10px 30px;
+        }  
+    } 
+       
+
     @media (min-width:700px) {
         .desktop_only {
             display:none !important;
     }
 }
 
+/*  -----------------        Media Query  iPhone 6+/6s+/7+/8+      ////landscape////   -----------------------  */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -202,6 +277,8 @@ export default {
                                  'deer';
   }
 
+  /*  -----------------  Intro Section -----------------------  */
+
 
     #_statement{
             font-size: 30px;
@@ -213,6 +290,8 @@ export default {
             line-height: 43px;
             padding: 20px;
   }
+
+  /*  -----------------  Deer Section -----------------------  */
 
     #_svg_deer {
             height: 200px;
@@ -235,13 +314,87 @@ export default {
 
 }
 
-/* ----------- iPhone X ----------- */
+/*  -----------------        iPhone X    ////portrait////   -----------------------  */
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait) {
+
+       .wrapper {
+            height: auto;
+            display: grid;
+            padding-top: 22%;
+            grid-template-columns: auto;
+            grid-template-rows: 60px 1fr;
+            grid-template-areas: 'deer'
+                                 'intro';
+        }
+
+        /*  -----------------  Intro Section -----------------------  */
+
+         #intro_section {
+            grid-area: intro;
+            padding-top: 10%;
+        }
+
+        #_title_ {
+            text-align: center;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        #_statement {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 15px;
+            border-top: 1px solid rgba(189, 195, 199, 1);
+            border-bottom: 1px solid rgba(189, 195, 199, 1);
+        }
+
+        #_about {
+            font-weight: 300;
+            padding: 20px;
+            margin: 18px;
+            font-size: 16px;
+        }
+
+        #_code {
+            padding-left: 35px;
+        }
+
+        /*  -----------------  Deer Section -----------------------  */
+
+        #deer {
+            grid-area: deer;
+            padding-top: 0;
+            height: 100px;
+        }
+
+        #_svg_deer {
+            height: 100px;
+            padding-top: 0%;
+        }
+
+        #contact {
+            padding: 10px 30px;
+        }
+
+        #mywork {
+            padding: 10px 30px;
+        } 
+
+     }
+
+/*  -----------------        iPhone X    ////landscape////   -----------------------  */
 
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation : landscape) { 
     
     .wrapper {
             height: auto;
@@ -251,6 +404,7 @@ export default {
             grid-template-areas: 'intro'
                                  'deer';
   }
+  /*  -----------------  Intro Section -----------------------  */
 
     #_statement{
             font-size: 30px;
@@ -262,6 +416,8 @@ export default {
             line-height: 43px;
             padding: 20px;
   }
+
+  /*  -----------------  Deer Section -----------------------  */
 
     #_svg_deer {
             height: 200px;
