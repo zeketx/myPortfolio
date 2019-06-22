@@ -187,6 +187,105 @@ export default {
     }
 }
 
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .wrapper {
+            height: auto;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'intro'
+                                 'deer';
+  }
+
+
+    #_statement{
+            font-size: 30px;
+            padding-top: 0%;
+  }
+
+    #_about {
+            font-size: 22px;
+            line-height: 43px;
+            padding: 20px;
+  }
+
+    #_svg_deer {
+            height: 200px;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            
+  }
+
+    #_code {
+    text-align: center;
+  }
+
+    #mywork {
+      font-size: 22px;
+  }
+
+    #contact {
+      font-size: 22px;
+  }  
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    
+    .wrapper {
+            height: auto;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'intro'
+                                 'deer';
+  }
+
+
+    #_statement{
+            font-size: 30px;
+            padding-top: 0%;
+  }
+
+    #_about {
+            font-size: 19px;
+            line-height: 43px;
+            padding: 20px;
+  }
+
+    #_svg_deer {
+            height: 200px;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            
+  }
+
+    #_code {
+    text-align: center;
+  }
+
+    #mywork {
+      font-size: 19px;
+  }
+
+    #contact {
+      font-size: 19px;
+  }  
+
+}
+
 /*  -----------------        Ipad Pro Media queries           -----------------------  */
 
 @media only screen 
@@ -231,5 +330,5 @@ export default {
     #contact {
       font-size: 25px;
   }    
-  }
+}
 </style>

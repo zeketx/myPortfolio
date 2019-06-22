@@ -281,7 +281,7 @@ export default {
 
     /*  -----------------         ///-----MEDIA QUERY----///            -----------------------  */
 
-        @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 700px){
         .wrapper {
            display: grid;
            height: auto;
@@ -341,9 +341,98 @@ export default {
            padding: 10px;
        }
 
-    /*  -----------------        LINK / STYLE         -----------------------  */
-
     }
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      
+     .wrapper {
+           display: grid;
+           height: auto;
+           padding: 40px;
+           width: 100vw;
+           grid-template-columns: 1fr;
+           grid-template-rows: 200px auto;
+       }
+
+        #_intro {
+           grid-column: auto;
+       }
+    /*  -----------------         Website GRID / STYLE            -----------------------  */
+        #img_ {
+           grid-column: auto;
+           display: grid;
+           grid-template-columns: auto;
+       }
+        #_img_index {
+           height: 292px;
+       }
+
+        #main_img{
+           grid-column: auto;
+       }
+
+        #project_description {
+           grid-column: auto;
+           padding-left: 0px;
+       }
+
+    /*  -----------------         MOBILE GRID / STYLE         -----------------------  */
+        #mobile_apps {
+           grid-column: auto;
+           display: grid;
+           grid-template-columns: auto;
+       }
+        #mobile_image {
+           grid-column: auto;
+           padding-bottom: 40px;
+           padding-top: 40px;
+       }
+        #mobile_description{
+           grid-column: auto;
+           padding-left: 0px;
+       }
+}    
+
+ /*  -----------------        IPHONE X          -----------------------  */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+     .wrapper {
+           height: 100vh;
+           display: grid;
+           padding-top: 50px;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           grid-template-rows:auto;
+       }
+
+        #_intro {
+           grid-column: 1/5;
+           text-align: center;
+           padding-bottom: 6%;
+       }
+
+        #img_ {
+           grid-column: 1/5;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           padding-bottom: 80px;
+       }
+
+       #mobile_apps {
+           grid-column: 1/5;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           text-align: center;
+       }
+
+}
 
     /*  -----------------        Ipad pro          -----------------------  */
 

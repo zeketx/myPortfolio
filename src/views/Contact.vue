@@ -75,6 +75,40 @@ export default {
       }
     }
 
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      
+       .wrapper {
+        height: auto;
+        display: grid;
+        padding-top: 0;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "_form"
+                             "_map";
+      }
+
+}
+
+/*  -----------------        IPHONE X          -----------------------  */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+      .wrapper {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "_form _map";
+      }
+  }
+
     /*  -----------------        Ipad Pro Media queries           -----------------------  */
 
 @media only screen 
