@@ -117,13 +117,13 @@ export default {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .wrapper {
-        height: auto;
+         height: 100vh;
         display: grid;
-        padding: 10%;
-        grid-template-columns: auto;
+        padding-top: 50px;
+        grid-template-columns: 140px 1fr 1fr 140px;
         grid-template-rows: auto;
-        grid-template-areas: "_form"
-                             "_map";
+        grid-template-areas: ". _form _map ."
+                             ". _form _map .";
       }
   }
 </style>

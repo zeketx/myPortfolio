@@ -241,8 +241,7 @@ export default {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     
     .wrapper {
             height: auto;
@@ -252,7 +251,6 @@ export default {
             grid-template-areas: 'intro'
                                  'deer';
   }
-
 
     #_statement{
             font-size: 30px;
@@ -281,7 +279,7 @@ export default {
   }
 
     #contact {
-      font-size: 19px;
+      font-size: px;
   }  
 
 }
@@ -296,39 +294,10 @@ export default {
     .wrapper {
             height: 100vh;
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 'intro'
-                                 'deer';
+            padding-top: 0%;
+            grid-template-columns: 1fr 500px 500px 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: '. intro deer .'
   }
-
-    #_statement{
-            font-size: 35px;
-            padding-top: 12%;
-  }
-
-    #_about[data-v-039c5b43] {
-            font-size: 37px;
-            line-height: 43px;
-            padding: 20px;
-  }
-
-    #_svg_deer {
-            height: 300px;
-            padding-top: 3%;
-            
-  }
-
-    #_code {
-    text-align: center;
-  }
-
-    #mywork {
-      font-size: 25px;
-  }
-
-    #contact {
-      font-size: 25px;
-  }    
 }
 </style>
