@@ -352,7 +352,7 @@ export default {
      .wrapper {
            display: grid;
            height: auto;
-           padding: 40px;
+           padding: 5px;
            width: 100vw;
            grid-template-columns: 1fr;
            grid-template-rows: 200px auto;
@@ -407,6 +407,7 @@ export default {
      .wrapper {
            height: 100vh;
            display: grid;
+           padding: 15px;
            padding-top: 50px;
            grid-template-columns: 1fr 1fr 1fr 1fr;
            grid-template-rows:auto;
@@ -421,6 +422,7 @@ export default {
         #img_ {
            grid-column: 1/5;
            display: grid;
+           grid-gap: 15px;
            grid-template-columns: 1fr 1fr;
            padding-bottom: 80px;
        }
