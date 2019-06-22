@@ -138,4 +138,17 @@ export default {
       .theme--light.v-btn {
           color: #fff;
       }
+
+/*  -----------------        Ipad Pro Media queries           -----------------------  */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #list_title {
+        font-weight: 400;
+        font-size: 32px;
+    }
+  }
 </style>

@@ -58,11 +58,24 @@ export default {
   .ma-2 {
       margin: 0px!important;
     }
+}
+
+/*  -----------------        Ipad Pro Media queries           -----------------------  */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container {
+    flex: none;
+  }  
+
   .pa-3 {
-      padding: 0px 0px !important;
+      padding: 0px!important;
     }
   .ma-2 {
-      margin: 0px 0px !important;
+      margin: 0px!important;
     }
 }
 </style>

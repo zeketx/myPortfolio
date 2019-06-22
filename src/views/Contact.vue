@@ -74,4 +74,22 @@ export default {
         height: 400px;
       }
     }
+
+    /*  -----------------        Ipad Pro Media queries           -----------------------  */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .wrapper {
+        height: auto;
+        display: grid;
+        padding: 10%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "_form"
+                             "_map";
+      }
+  }
 </style>

@@ -181,15 +181,55 @@ export default {
         }  
     }
 
-    @media (min-width: 1281px) {
-        
-        
-  
-    }
-
     @media (min-width:700px) {
         .desktop_only {
             display:none !important;
     }
 }
+
+/*  -----------------        Ipad Pro Media queries           -----------------------  */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .wrapper {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'intro'
+                                 'deer';
+  }
+
+    #_statement{
+            font-size: 35px;
+            padding-top: 12%;
+  }
+
+    #_about[data-v-039c5b43] {
+            font-size: 37px;
+            line-height: 43px;
+            padding: 20px;
+  }
+
+    #_svg_deer {
+            height: 300px;
+            padding-top: 3%;
+            
+  }
+
+    #_code {
+    text-align: center;
+  }
+
+    #mywork {
+      font-size: 25px;
+  }
+
+    #contact {
+      font-size: 25px;
+  }    
+  }
 </style>

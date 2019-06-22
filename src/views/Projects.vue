@@ -344,4 +344,22 @@ export default {
     /*  -----------------        LINK / STYLE         -----------------------  */
 
     }
+
+    /*  -----------------        Ipad pro          -----------------------  */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .wrapper {
+           display: grid;
+           padding: 20px;
+           height: auto;
+           width: 100vw;
+           grid-template-columns: 1fr;
+           grid-template-rows: 200px auto;
+       }
+
+}
 </style>
