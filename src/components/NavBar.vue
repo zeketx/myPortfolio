@@ -42,16 +42,16 @@
       <div id="_social_icons">
         <ul class="icons">
             <li>
-               <a href="https://github.com/zeketx"><font-awesome-icon :icon="['fab', 'github']" class="icon alt"/></a>
+               <a href="https://github.com/zeketx" target="_blank"><font-awesome-icon :icon="['fab', 'github']" class="icon alt"/></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/ezekiel-mauricio-655b70127/"><font-awesome-icon :icon="['fab', 'linkedin']" class="icon alt"/></a>
+                <a href="https://www.linkedin.com/in/ezekiel-mauricio-655b70127/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" class="icon alt"/></a>
             </li>
             <li>
-                <a href="mailto:zekemauricio@icloud.com"><font-awesome-icon :icon="['fa', 'envelope']" class="icon alt"/></a>
+                <a href="mailto:ezekielmauricio86@gmail.com" target="_blank"><font-awesome-icon :icon="['fa', 'envelope']" class="icon alt"/></a>
             </li>
-            <li>
-                <a href="https://plus.google.com/115603273133751670681"><font-awesome-icon :icon="['fab', 'google-plus-square']" class="icon alt"/></a>
+           <li>
+                <a href="https://plus.google.com/115603273133751670681" target="_blank"><font-awesome-icon :icon="['fab', 'free-code-camp']" class="icon alt"/></a>
             </li>
         </ul>
     </div>
