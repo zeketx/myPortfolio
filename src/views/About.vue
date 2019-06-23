@@ -271,6 +271,7 @@ export default {
     .wrapper {
             height: auto;
             display: grid;
+            padding-top: 5%;
             grid-template-columns: auto;
             grid-template-rows: 1fr 1fr;
             grid-template-areas: 'intro'
