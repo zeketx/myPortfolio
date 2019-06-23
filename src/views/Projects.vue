@@ -76,7 +76,7 @@ export default {
                     git: 'https',
                     title:'HTML5 - CSS - JS - NETLIFY',
                     image: require('../assets/smallbusiness.png'),
-                    url:'https://modest-poitras-e281ac.netlify.com/#models',
+                    url:'https://modest-poitras-e281ac.netlify.com/',
                     description: 'This website was inspired by my interests towards container homes and projects. It is built using the "basics" with the addition of animante.css. It contains a "success" page upon entering correct form parameters. ',
                 },
                 {
