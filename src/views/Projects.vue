@@ -94,7 +94,7 @@ export default {
                     git: 'https',
                     title: 'JS - CSS3 - HTML5',
                     image: require('../assets/weatherApp.png'),
-                    link: 'https://github.com/zeketx/Weather-App',
+                    link: 'https://sleepy-kare-8f84fc.netlify.com/',
                     description: 'The vanilla javascript weather app has by far been my favorite project since really hitting programming hard this January. Making API calls and digging for bugs is probably the thing I love the most in this Journey.'
                 },
                 {
