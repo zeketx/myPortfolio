@@ -22,7 +22,7 @@
             <div id="project_description">
                 <p> {{ card.description}} </p>
                 <p id="card_title"> {{ card.title }} </p>
-            <!--------------------------------------       Github | Web Links         -------------------------->
+            <!--------------------------------------       Github | Website Links         -------------------------->
                 <div id="links">
                     <a :href="card.git" id="code_link" target="_blank">
                         <font-awesome-icon :icon="['fab', 'github']" class="icon alt"/>
@@ -42,7 +42,7 @@
                 <div id="mobile_description">
                     <p> {{ mbl.description }} </p>
                     <p id="mbl_title"> {{ mbl.title }} </p>
-            <!--------------------------------------       Mobile Github | Web Links         -------------------------->
+            <!--------------------------------------       Mobile Github | Mobile Links         -------------------------->
                     <div id="links">
                         <a :href="mbl.git" id="code_link" target="_blank">
                             <font-awesome-icon :icon="['fab', 'github']" class="icon alt"/>
@@ -65,7 +65,7 @@ export default {
             cards: [
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/myPortfolio',
                     title:'VUE - CSS - JS - VUETIFY - FIREBASE',
                     image: require('../assets/mywebsite.png'),
                     url: 'https',
@@ -91,7 +91,7 @@ export default {
             mobile: [
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/Weather-App',
                     title: 'JS - CSS3 - HTML5',
                     image: require('../assets/weatherApp.png'),
                     link: 'https://sleepy-kare-8f84fc.netlify.com/',
@@ -99,7 +99,7 @@ export default {
                 },
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.2.html',
                     title: 'html - css',
                     image: require('../assets/email1.2.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.2.html',
@@ -107,7 +107,7 @@ export default {
                 },
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.3.html',
                     title: 'html - css',
                     image: require('../assets/email1.3.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.3.html',
@@ -115,7 +115,7 @@ export default {
                 },
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.1.html',
                     title: 'html - css',
                     image: require('../assets/email1.1.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.1.html',
