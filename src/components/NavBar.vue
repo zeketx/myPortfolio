@@ -51,7 +51,7 @@
                 <a href="mailto:ezekielmauricio86@gmail.com" target="_blank"><font-awesome-icon :icon="['fa', 'envelope']" class="icon alt"/></a>
             </li>
            <li>
-                <a href="https://plus.google.com/115603273133751670681" target="_blank"><font-awesome-icon :icon="['fab', 'free-code-camp']" class="icon alt"/></a>
+                <a href="https://www.freecodecamp.org/zeketx" target="_blank"><font-awesome-icon :icon="['fab', 'free-code-camp']" class="icon alt"/></a>
             </li>
         </ul>
     </div>
