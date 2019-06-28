@@ -100,7 +100,7 @@ export default {
                 {
                     code: 'SOURCE',
                     git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.2.html',
-                    title: 'html - css',
+                    title: 'HTML - CSS',
                     image: require('../assets/email1.2.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.2.html',
                     description: 'I took the misses most frequented shopping emails and challenged myself to build them from scratch using email formatting.'
@@ -108,7 +108,7 @@ export default {
                 {
                     code: 'SOURCE',
                     git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.3.html',
-                    title: 'html - css',
+                    title: 'HTML - CSS',
                     image: require('../assets/email1.3.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.3.html',
                     description: 'I took the misses most frequented shopping emails and challenged myself to build them from scratch using email formatting.'
@@ -116,7 +116,7 @@ export default {
                 {
                     code: 'SOURCE',
                     git: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.1.html',
-                    title: 'html - css',
+                    title: 'HTML - CSS',
                     image: require('../assets/email1.1.png'),
                     link: 'https://github.com/zeketx/HTML-email-Templates/blob/master/template1.1.html',
                     description: 'I took the misses most frequented shopping emails and challenged myself to build them from scratch using email formatting.'
