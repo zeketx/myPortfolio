@@ -8,8 +8,8 @@
                 <v-btn
                 id="_resume"
                 flat
-                >
-                Resume
+                ><a href="https://drive.google.com/file/d/1v6jWvaVGiZrpceAFNOznk6CznUXEdbs6/view?usp=sharing" id="resume_link"  target="_blank">Resume</a>
+                
                 </v-btn>
                 <p id="btn_message"> You will be tempted to hire me !</p>
             </div>
@@ -156,6 +156,12 @@ export default {
         #_resume {
            border: 1px solid grey;
            border-radius: 15px;
+       }
+
+       #resume_link {
+
+           text-decoration: none;
+           color: grey;
        }
 
        #_resume:hover {
