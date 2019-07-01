@@ -8,7 +8,7 @@
                 <v-btn
                 id="_resume"
                 flat
-                ><a href="https://drive.google.com/file/d/1v6jWvaVGiZrpceAFNOznk6CznUXEdbs6/view?usp=sharing" id="resume_link"  target="_blank">Resume</a>
+                ><a href="https://drive.google.com/file/d/1jHMSgOxd2_IAXdTdZPLUnPTDrw7HuGNx/view?usp=sharing" id="resume_link"  target="_blank">Resume</a>
                 
                 </v-btn>
                 <p id="btn_message"> You will be tempted to hire me !</p>
