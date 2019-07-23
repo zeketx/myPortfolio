@@ -73,7 +73,7 @@ export default {
                 },
                 {
                     code: 'SOURCE',
-                    git: 'https',
+                    git: 'https://github.com/zeketx/container_template',
                     title:'HTML5 - CSS - JS - NETLIFY',
                     image: require('../assets/smallbusiness.png'),
                     url:'https://modest-poitras-e281ac.netlify.com/',
