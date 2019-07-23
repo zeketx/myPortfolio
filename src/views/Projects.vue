@@ -68,7 +68,7 @@ export default {
                     git: 'https://github.com/zeketx/myPortfolio',
                     title:'VUE - CSS - JS - VUETIFY - NETLIFY',
                     image: require('../assets/mywebsite.png'),
-                    url: 'https',
+                    url: 'https://ezekielmauricio.netlify.com/',
                     description: 'This is the very website you are cruising through. I designed my portfolio using Vue.js to challenge myself in a new framework as well make room for future components that interest me.',
                 },
                 {

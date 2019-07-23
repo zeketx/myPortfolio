@@ -1,99 +1,28 @@
 <template>
-  <v-app class="#FFFFFF">
-    <NavBar />
-    <v-content class="ma-2 pa-3 #FFFFFF">
-      <transition name="page" mode="out-in">
-      <router-view></router-view>
-      </transition>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
-<script>
-import NavBar from './components/NavBar'
-export default {
-  name: 'App',
-  components: { NavBar },
-  data () {
-    return {
 
-    }
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'app',
+  components: {
+    HelloWorld
   }
 }
 </script>
 
 <style>
-* {
-    font-family: Roboto,sans-serif;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
-/*  -----------------        Main APP backgrounds            -----------------------  */
-.v-toolbar__content {
-    background: #FFFFFF;
-}
-.theme--light.v-toolbar {
-    background-color: #FFFFFF;
-}
-.theme--light.v-footer {
-    background: #FFFFFF;
-}
-.theme--light.application {
-    background: #FFFFFF;
-}
-/*  -----------------        router transitions            -----------------------  */
-.page-enter-active, .page-leave-active {
-  transition: opacity 1s, transform 1s;
-}
-.page-enter, .page-leave-to {
-  opacity: 0;
-  transform: translate(-30%);
-}
-/*  -----------------        Media queries           -----------------------  */
-
-@media only screen and (max-width: 700px){
-  .container {
-    flex: none;
-  }
-  .pa-3 {
-      padding: 0px!important;
-    }
-  .ma-2 {
-      margin: 0px!important;
-    }
-}
-
-/*  -----------------        Ipad Pro Media queries           -----------------------  */
-
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-  .container {
-    flex: none;
-  }  
-
-  .pa-3 {
-      padding: 0px!important;
-    }
-  .ma-2 {
-      margin: 0px!important;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-  .container {
-    flex: none;
-  }  
-
-  .pa-3 {
-      padding: 0px!important;
-    }
-  .ma-2 {
-      margin: 0px!important;
-    }
-  }
 </style>
