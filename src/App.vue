@@ -1,28 +1,68 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app class="#FFFFFF">
+    <NavBar />
+    <v-content class="ma-2 pa-3 #FFFFFF">
+      <transition name="page" mode="out-in">
+      <router-view></router-view>
+      </transition>
+    </v-content>
+  </v-app>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from '@/components/NavBar.vue'
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  name: 'App',
+  components: { NavBar },
+  data () {
+    return {
+
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+    font-family: Roboto,sans-serif;
+}
+/*  -----------------        Main APP backgrounds            -----------------------  */
+.v-toolbar__content {
+    background: #FFFFFF;
+}
+.theme--light.v-toolbar {
+    background-color: #FFFFFF;
+}
+.theme--light.v-footer {
+    background: #FFFFFF;
+}
+.theme--light.application {
+    background: #FFFFFF;
+}
+/*  -----------------        router transitions            -----------------------  */
+.page-enter-active, .page-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: translate(-30%);
+}
+/*  -----------------        Media queries           -----------------------  */
+
+@media only screen and (max-width: 700px){
+  .container {
+    flex: none;
+  }
+  .pa-3 {
+      padding: 0px!important;
+    }
+  .ma-2 {
+      margin: 0px!important;
+    }
+  .pa-3 {
+      padding: 0px 0px !important;
+    }
+  .ma-2 {
+      margin: 0px 0px !important;
+    }
 }
 </style>
