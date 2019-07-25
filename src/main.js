@@ -8,7 +8,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faGooglePlusSquare, faFreeCodeCamp} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
+
 
 library.add( faGithub, faLinkedin, faEnvelope, faGooglePlusSquare, faFreeCodeCamp, faLink)
 
